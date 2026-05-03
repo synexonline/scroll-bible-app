@@ -28,7 +28,13 @@ export function JourneyCard({ journey, index }: JourneyCardProps) {
       >
         <div className="h-40 bg-gradient-to-br from-scroll-accent/20 via-scroll-teal/10 to-scroll-surface flex items-center justify-center">
           <div className="text-6xl opacity-60 group-hover:opacity-80 transition-opacity">
-            {journey.id === 'life-of-jesus' ? '✦' : '📜'}
+            {journey.id === 'life-of-jesus'
+              ? '✦'
+              : journey.id === 'pauls-adventures'
+                ? '⛵'
+                : journey.id === 'miracles-parables'
+                  ? '✧'
+                  : '📜'}
           </div>
         </div>
 

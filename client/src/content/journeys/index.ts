@@ -1,7 +1,9 @@
 import type { Journey } from '../types';
 import { lifeOfJesus } from './life-of-jesus';
+import { paulsAdventures } from './pauls-adventures';
+import { miraclesParables } from './miracles-parables';
 
-export const journeys: Journey[] = [lifeOfJesus];
+export const journeys: Journey[] = [lifeOfJesus, paulsAdventures, miraclesParables];
 
 export function getJourney(id: string): Journey | undefined {
   return journeys.find((j) => j.id === id);

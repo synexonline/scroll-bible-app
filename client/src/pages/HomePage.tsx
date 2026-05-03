@@ -72,7 +72,7 @@ export function HomePage() {
       {/* Coming soon */}
       <div className="text-center py-6">
         <p className="text-xs text-scroll-text-muted">
-          More journeys coming soon — Paul's Adventures, Miracles & Parables
+          More journeys coming soon — stay tuned
         </p>
       </div>
     </div>
